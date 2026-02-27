@@ -1,4 +1,4 @@
-#Kaushik Yadav
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -43,4 +43,5 @@ if uploaded_file is not None:
 
     st.text(classification_report(y_test,y_pred))
     st.write("Accuracy:", round (accuracy_score (y_test,y_pred),3))
+
     st.pyplot(plt.gcf())
